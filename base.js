@@ -19,17 +19,17 @@ const STATS = [
 
 const SERVICIOS = [
   { num:'01', icon:'🏋️', title:'Zona de pesas',   desc:'Zona de Pesas y equipo para entrenar cada músculo de tu cuerpo.' },
-  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicleta estacionaria, elíptica y caminadora.' },
-  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Personal certificado para la práctica de TAEKWON-DO ITF, entrenas entre campeones, defensa personal.' },
-  { num:'04', icon:'🚿', title:'Vestuarios',        desc:'Sanitario privado y espacio limpio para tus entrenamientos.' },
+  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicletas estacionarias, elípticas y cintas de correr. Zona climatizada con pantallas.' },
+  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Saco de golpe, guantes disponibles, espejo de entrenamiento.' },
+  { num:'04', icon:'🚿', title:'Vestuarios',        desc:'Duchas privadas, lockers con candado y espacio limpio para prepararte antes y después.' },
 ];
 
 const HORARIOS = [
-  { d:'Lun', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
-  { d:'Mar', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
-  { d:'Mié', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
-  { d:'Jue', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
-  { d:'Vie', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Lun', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Mar', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Mié', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Jue', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Vie', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
   { d:'Sáb', h:'CERRADO', closed: true },
   { d:'Dom', h:'CERRADO', closed: true },
 ];
@@ -42,22 +42,22 @@ const PLANES = [
   },
   {
     tag:'Popular',     name:'Mensual',    price:'L. 500',   per:'por mes',
-    features:['Acceso ilimitado 30 días','Sin contrato mensual'],
+    features:['Acceso ilimitado 30 días','Con contrato mensual','Entrenamiento personalizado','Evaluación periódica'],
     featured: true,
   },
   {
-    tag:'Oferta',      name:'Quincenal',  price:'L. 300',   per:'15 días',
-    features:['Acceso ilimitado 15 días','Ahorra vs diario','Evaluación física'],
+    tag:'Ahorro',      name:'Trimestral', price:'L. 1,300', per:'3 meses',
+    features:['Acceso ilimitado 90 días','Ahorra vs mensual','Casillero incluido','Evaluación física'],
     featured: false,
   },
   {
-    tag:'Mejor valor', name:'Anual',      price:'L. 5,200', per:'12 meses',
+    tag:'Mejor valor', name:'Anual',      price:'L. 5,500', per:'12 meses',
     features:['Acceso ilimitado 365 días','Congelamiento 1x/año','Programa personalizado','Evaluación mensual'],
     featured: false,
   },
 ];
 
-const MAPS_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.0!2d-87.22556!3d14.07825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDA0JzQyLjciTiA4N8KwMTMnMzIuMCJX!5e0!3m2!1ses!2sus!4v1681000000000';
+const MAPS_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.6!2d-87.1828328!3d14.0183605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fbdf9de4c426d%3A0xeada07de1d6c3c74!2s504hnfitness!5e0!3m2!1ses!2sus!4v1681000000000';
 
 /* ============================================================
    COMPONENTES
@@ -246,7 +246,3 @@ const App = () => (
     <Footer />
   </div>
 );
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
