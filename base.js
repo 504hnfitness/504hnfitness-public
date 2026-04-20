@@ -51,7 +51,7 @@ const PLANES = [
     featured: false,
   },
   {
-    tag:'Mejor valor', name:'Anual',      price:'L. 5,500', per:'12 meses',
+    tag:'Promoción', name:'Anual',      price:'L. 5,500', per:'12 meses',
     features:['Acceso ilimitado 365 días','Congelamiento 1x/año','Entrenamiento personalizado','Evaluación mensual'],
     featured: false,
   },
