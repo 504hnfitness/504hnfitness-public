@@ -1,7 +1,7 @@
 /* ============================================================
    504HNFITNESS — Estilos página pública
    ============================================================ */
-
+ 
 /* ---------- VARIABLES ---------- */
 :root {
   --black:    #0a0a0a;
@@ -19,10 +19,10 @@
   --white:    #fafafa;
   --wa-green: #25D366;
 }
-
+ 
 /* ---------- RESET ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
 body {
   background: var(--black);
   color: var(--white);
@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
-
+ 
 /* ---------- NOISE TEXTURE OVERLAY ---------- */
 body::before {
   content: '';
@@ -43,12 +43,12 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 200px 200px;
 }
-
+ 
 /* ---------- SCROLLBAR ---------- */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--gray-950); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
-
+ 
 /* ============================================================
    NAVBAR
    ============================================================ */
@@ -65,7 +65,7 @@ body::before {
   align-items: center;
   justify-content: space-between;
 }
-
+ 
 .nav-logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 28px;
@@ -75,7 +75,7 @@ body::before {
   align-items: center;
   gap: 10px;
 }
-
+ 
 .nav-logo-icon {
   width: 32px;
   height: 32px;
@@ -87,13 +87,13 @@ body::before {
   color: var(--black);
   font-size: 16px;
 }
-
+ 
 .nav-links {
   display: flex;
   gap: 24px;
   align-items: center;
 }
-
+ 
 .nav-wa-btn {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 13px;
@@ -113,7 +113,7 @@ body::before {
   gap: 8px;
 }
 .nav-wa-btn:hover { filter: brightness(1.1); }
-
+ 
 /* ============================================================
    BOTONES GLOBALES
    ============================================================ */
@@ -132,7 +132,7 @@ body::before {
   transition: background 0.15s, transform 0.1s;
 }
 .btn-primary:hover { background: #ffd700; transform: translateY(-1px); }
-
+ 
 .btn-outline {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
@@ -147,7 +147,7 @@ body::before {
   transition: border-color 0.15s, color 0.15s;
 }
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
+ 
 /* ============================================================
    HERO
    ============================================================ */
@@ -159,7 +159,7 @@ body::before {
   overflow: hidden;
   background: var(--black);
 }
-
+ 
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -168,21 +168,21 @@ body::before {
     url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070') center/cover no-repeat;
   opacity: 0.55;
 }
-
+ 
 .hero-lines {
   position: absolute;
   inset: 0;
   pointer-events: none;
   background: repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(245,197,24,0.04) 80px);
 }
-
+ 
 .hero-content {
   position: relative;
   z-index: 2;
   padding: 80px 48px;
   max-width: 720px;
 }
-
+ 
 .hero-eyebrow {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 13px;
@@ -202,7 +202,7 @@ body::before {
   height: 2px;
   background: var(--gold);
 }
-
+ 
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(72px, 10vw, 120px);
@@ -212,7 +212,7 @@ body::before {
   margin-bottom: 28px;
 }
 .hero-title em { color: var(--gold); font-style: normal; display: block; }
-
+ 
 .hero-sub {
   font-size: 17px;
   color: var(--gray-400);
@@ -220,9 +220,9 @@ body::before {
   max-width: 480px;
   margin-bottom: 44px;
 }
-
+ 
 .hero-cta-group { display: flex; gap: 16px; flex-wrap: wrap; }
-
+ 
 .hero-badge {
   position: absolute;
   bottom: 48px;
@@ -244,7 +244,7 @@ body::before {
 .hero-badge-inner { text-align: center; line-height: 1.1; }
 .hero-badge-inner strong { font-size: 30px; display: block; }
 .hero-badge-inner span  { font-size: 11px; letter-spacing: 0.05em; }
-
+ 
 .hero-stat-strip {
   position: absolute;
   bottom: 0;
@@ -254,7 +254,7 @@ body::before {
   background: rgba(245,197,24,0.95);
   display: flex;
 }
-
+ 
 .hero-stat {
   flex: 1;
   padding: 18px 24px;
@@ -265,14 +265,14 @@ body::before {
   cursor: default;
 }
 .hero-stat:last-child { border-right: none; }
-
+ 
 .hero-stat-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   line-height: 1;
   color: var(--black);
 }
-
+ 
 .hero-stat-label {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 12px;
@@ -282,7 +282,7 @@ body::before {
   color: rgba(0,0,0,0.6);
   line-height: 1.3;
 }
-
+ 
 /* ============================================================
    SECTION LABEL & TITLE (reutilizable)
    ============================================================ */
@@ -305,7 +305,7 @@ body::before {
   height: 1px;
   background: var(--gold);
 }
-
+ 
 .section-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(44px, 6vw, 72px);
@@ -314,18 +314,18 @@ body::before {
   margin-bottom: 56px;
 }
 .section-title em { color: var(--gold); font-style: normal; }
-
+ 
 /* ============================================================
    SERVICIOS
    ============================================================ */
 .section { padding: 96px 48px; }
-
+ 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2px;
 }
-
+ 
 .service-card {
   background: var(--gray-900);
   padding: 40px 32px;
@@ -346,7 +346,7 @@ body::before {
   line-height: 1;
 }
 .service-card:hover { border-top-color: var(--gold); background: var(--gray-800); }
-
+ 
 .service-icon {
   width: 52px;
   height: 52px;
@@ -358,7 +358,7 @@ body::before {
   margin-bottom: 24px;
   font-size: 22px;
 }
-
+ 
 .service-card h3 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 22px;
@@ -369,19 +369,19 @@ body::before {
   margin-bottom: 12px;
 }
 .service-card p { font-size: 14px; color: var(--gray-400); line-height: 1.6; }
-
+ 
 /* ============================================================
    HORARIOS
    ============================================================ */
 .schedule-section { padding: 80px 48px; background: var(--gray-950); }
-
+ 
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 2px;
   margin-top: 0;
 }
-
+ 
 .schedule-day {
   background: var(--gray-900);
   padding: 24px 20px;
@@ -389,7 +389,7 @@ body::before {
   transition: border-color 0.2s;
 }
 .schedule-day:hover { border-bottom-color: var(--gold); }
-
+ 
 .schedule-day-name {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 13px;
@@ -399,7 +399,7 @@ body::before {
   color: var(--gold);
   margin-bottom: 8px;
 }
-
+ 
 .schedule-day-hours {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
@@ -408,18 +408,18 @@ body::before {
   white-space: pre-line;
 }
 .schedule-day-hours.closed { color: var(--gray-700); font-size: 18px; }
-
+ 
 /* ============================================================
    PLANES
    ============================================================ */
 .planes-section { padding: 80px 48px; }
-
+ 
 .planes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2px;
 }
-
+ 
 .plan-card {
   background: var(--gray-900);
   padding: 36px 28px;
@@ -429,7 +429,7 @@ body::before {
 }
 .plan-card.featured { background: var(--gold); color: var(--black); border-color: var(--gold); }
 .plan-card:not(.featured):hover { border-color: rgba(245,197,24,0.3); }
-
+ 
 .plan-tag {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 11px;
@@ -440,13 +440,13 @@ body::before {
   margin-bottom: 8px;
 }
 .plan-card.featured .plan-tag { color: rgba(0,0,0,0.6); }
-
+ 
 .plan-name { font-family: 'Bebas Neue', sans-serif; font-size: 36px; line-height: 1; margin-bottom: 20px; }
 .plan-card.featured .plan-name { color: var(--black); }
-
+ 
 .plan-price { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 1; color: var(--white); margin-bottom: 4px; }
 .plan-card.featured .plan-price { color: var(--black); }
-
+ 
 .plan-currency {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 13px;
@@ -455,7 +455,7 @@ body::before {
   margin-bottom: 24px;
 }
 .plan-card.featured .plan-currency { color: rgba(0,0,0,0.55); }
-
+ 
 .plan-features { list-style: none; }
 .plan-features li {
   font-size: 13px;
@@ -469,7 +469,7 @@ body::before {
 .plan-card.featured .plan-features li { color: rgba(0,0,0,0.7); border-bottom-color: rgba(0,0,0,0.1); }
 .plan-features li::before { content: '✓'; color: var(--gold); font-weight: 700; font-size: 12px; flex-shrink: 0; }
 .plan-card.featured .plan-features li::before { color: var(--black); }
-
+ 
 .plan-popular {
   position: absolute;
   top: -1px;
@@ -483,7 +483,7 @@ body::before {
   text-transform: uppercase;
   padding: 4px 12px;
 }
-
+ 
 /* ============================================================
    UBICACIÓN
    ============================================================ */
@@ -496,7 +496,7 @@ body::before {
   align-items: center;
 }
 @media (max-width: 768px) { .location-section { grid-template-columns: 1fr; } }
-
+ 
 .location-map {
   aspect-ratio: 4/3;
   background: var(--gray-900);
@@ -505,10 +505,10 @@ body::before {
   position: relative;
 }
 .location-map iframe { width: 100%; height: 100%; border: none; filter: grayscale(1) invert(1) brightness(0.85); }
-
+ 
 .location-address { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin-bottom: 8px; }
 .location-meta { font-size: 14px; color: var(--gray-400); margin-bottom: 32px; line-height: 1.6; }
-
+ 
 .wa-btn {
   display: inline-flex;
   align-items: center;
@@ -526,7 +526,7 @@ body::before {
   transition: filter 0.15s;
 }
 .wa-btn:hover { filter: brightness(1.1); }
-
+ 
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -542,7 +542,7 @@ footer {
 }
 .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.04em; color: var(--gold); }
 .footer-copy { font-size: 13px; color: var(--gray-700); }
-
+ 
 /* ============================================================
    ANIMACIONES
    ============================================================ */
@@ -551,3 +551,90 @@ footer {
   to   { opacity: 1; transform: translateY(0); }
 }
 .fade-up { animation: fadeUp 0.4s ease both; }
+ 
+/* ============================================================
+   RESPONSIVE — MÓVIL (max 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+ 
+  /* --- Navbar --- */
+  .nav {
+    padding: 0 16px;
+    height: 56px;
+  }
+  .nav-logo { font-size: 22px; }
+  .nav-logo-icon { width: 26px; height: 26px; font-size: 13px; }
+  .nav-wa-btn { font-size: 11px; padding: 6px 14px; }
+ 
+  /* --- Hero --- */
+  .hero { min-height: 100svh; align-items: flex-start; }
+  .hero-content { padding: 48px 20px 140px; max-width: 100%; }
+  .hero-title { font-size: clamp(56px, 16vw, 80px); }
+  .hero-sub { font-size: 15px; max-width: 100%; margin-bottom: 32px; }
+  .hero-cta-group { flex-direction: column; gap: 12px; }
+  .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 14px 20px; }
+ 
+  .hero-badge { display: none; }
+ 
+  .hero-stat-strip { flex-wrap: wrap; }
+  .hero-stat {
+    flex: 1 1 50%;
+    padding: 12px 16px;
+    gap: 10px;
+    border-right: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+  .hero-stat-num { font-size: 26px; }
+  .hero-stat-label { font-size: 10px; }
+ 
+  /* --- Secciones generales --- */
+  .section { padding: 56px 20px; }
+  .section-title { font-size: clamp(36px, 10vw, 52px); margin-bottom: 36px; }
+ 
+  /* --- Servicios --- */
+  .services-grid { grid-template-columns: 1fr; gap: 2px; }
+  .service-card { padding: 28px 20px; }
+  .service-card::before { font-size: 64px; }
+ 
+  /* --- Horarios --- */
+  .schedule-section { padding: 56px 20px; }
+  .schedule-grid { grid-template-columns: repeat(2, 1fr); }
+  .schedule-day { padding: 18px 14px; }
+  .schedule-day-hours { font-size: 16px; }
+ 
+  /* --- Planes --- */
+  .planes-section { padding: 56px 20px; }
+  .planes-grid { grid-template-columns: 1fr; }
+  .plan-card { padding: 28px 20px; }
+  .plan-price { font-size: 42px; }
+  .plan-name { font-size: 30px; }
+ 
+  /* --- Ubicación --- */
+  .location-section {
+    padding: 56px 20px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .location-address { font-size: 22px; }
+  .wa-btn { width: 100%; justify-content: center; }
+ 
+  /* --- Footer --- */
+  footer {
+    padding: 28px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+ 
+/* ============================================================
+   RESPONSIVE — TABLET (769px – 1024px)
+   ============================================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content { padding: 64px 32px; }
+  .hero-title { font-size: clamp(64px, 9vw, 96px); }
+  .section { padding: 72px 32px; }
+  .schedule-section, .planes-section { padding: 64px 32px; }
+  .location-section { padding: 64px 32px; gap: 40px; }
+  .planes-grid { grid-template-columns: repeat(2, 1fr); }
+}
