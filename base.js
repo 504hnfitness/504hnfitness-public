@@ -45,7 +45,7 @@ const PLANES = [
   },
   {
     tag:'Popular',     name:'Mensual',    price:'L. 500',   per:'por mes',
-    features:['Acceso ilimitado 30 días','Con contrato mensual','Entrenamiento personalizado','Evaluación periódica'],
+    features:['Acceso ilimitado 30 días','L 200 Inscripción única anual','Entrenamiento personalizado','Evaluación periódica'],
     featured: true,
   },
   {
