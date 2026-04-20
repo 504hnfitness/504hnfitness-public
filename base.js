@@ -25,11 +25,11 @@ const SERVICIOS = [
 ];
 
 const HORARIOS = [
-  { d:'Lun', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Mar', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Mié', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Jue', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Vie', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Lun', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Mar', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Mié', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Jue', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Vie', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
   { d:'Sáb', h:'CERRADO', closed: true },
   { d:'Dom', h:'CERRADO', closed: true },
 ];
@@ -46,13 +46,13 @@ const PLANES = [
     featured: true,
   },
   {
-    tag:'Ahorro',      name:'Trimestral', price:'L. 1,300', per:'3 meses',
-    features:['Acceso ilimitado 90 días','Ahorra vs mensual','Casillero incluido','Evaluación física'],
+    tag:'Ahorro',      name:'Quincenal', price:'L. 300', per:'15 días',
+    features:['Acceso ilimitado 15 días','Ahorra vs diario','Evaluación periódica'],
     featured: false,
   },
   {
     tag:'Mejor valor', name:'Anual',      price:'L. 5,500', per:'12 meses',
-    features:['Acceso ilimitado 365 días','Congelamiento 1x/año','Programa personalizado','Evaluación mensual'],
+    features:['Acceso ilimitado 365 días','Congelamiento 1x/año','Entrenamiento personalizado','Evaluación mensual'],
     featured: false,
   },
 ];
