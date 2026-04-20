@@ -19,9 +19,9 @@ const STATS = [
 
 const SERVICIOS = [
   { num:'01', icon:'🏋️', title:'Zona de pesas',   desc:'Zona de Pesas y equipo para entrenar cada músculo de tu cuerpo.' },
-  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicletas estacionarias, elípticas y cintas de correr. Zona climatizada con pantallas.' },
-  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Saco de golpe, guantes disponibles, espejo de entrenamiento.' },
-  { num:'04', icon:'🚿', title:'Vestuarios',        desc:'Duchas privadas, lockers con candado y espacio limpio para prepararte antes y después.' },
+  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicleta estacionaria, elíptica. Derecho a clase de cardio de 8pm-9pm de LUN-VIER.' },
+  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Personal Certificado Taekwondo ITF, entrenas con campeones, defensa personal.' },
+  { num:'04', icon:'🚿', title:'Sanitario',        desc:'Sanitario privado, espacio limpio para tus entrenamientos.' },
 ];
 
 const HORARIOS = [
