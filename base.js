@@ -19,17 +19,17 @@ const STATS = [
 
 const SERVICIOS = [
   { num:'01', icon:'🏋️', title:'Zona de pesas',   desc:'Zona de Pesas y equipo para entrenar cada músculo de tu cuerpo.' },
-  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicletas estacionarias, elípticas y cintas de correr. Zona climatizada con pantallas.' },
-  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Saco de golpe, guantes disponibles, espejo de entrenamiento.' },
-  { num:'04', icon:'🚿', title:'Vestuarios',        desc:'Duchas privadas, lockers con candado y espacio limpio para prepararte antes y después.' },
+  { num:'02', icon:'🚴', title:'Cardio',            desc:'Bicicleta estacionaria, elíptica y caminadora.' },
+  { num:'03', icon:'🥋', title:'Taekwon-do ITF',    desc:'Personal certificado para la práctica de TAEKWON-DO ITF, entrenas entre campeones, defensa personal.' },
+  { num:'04', icon:'🚿', title:'Vestuarios',        desc:'Sanitario privado y espacio limpio para tus entrenamientos.' },
 ];
 
 const HORARIOS = [
-  { d:'Lun', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Mar', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Mié', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Jue', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
-  { d:'Vie', h:'5:00am – 7:30am\ny 4:00pm – 9:00pm' },
+  { d:'Lun', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Mar', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Mié', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Jue', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
+  { d:'Vie', h:'5:00am – 7:30am\ny 5:00pm – 9:00pm' },
   { d:'Sáb', h:'CERRADO', closed: true },
   { d:'Dom', h:'CERRADO', closed: true },
 ];
@@ -42,12 +42,12 @@ const PLANES = [
   },
   {
     tag:'Popular',     name:'Mensual',    price:'L. 500',   per:'por mes',
-    features:['Acceso ilimitado 30 días','Sin contrato mensual','Casillero incluido'],
+    features:['Acceso ilimitado 30 días','Sin contrato mensual'],
     featured: true,
   },
   {
-    tag:'Ahorro',      name:'Trimestral', price:'L. 1,300', per:'3 meses',
-    features:['Acceso ilimitado 90 días','Ahorra vs mensual','Casillero incluido','Evaluación física'],
+    tag:'Oferta',      name:'Quincenal',  price:'L. 300',   per:'15 días',
+    features:['Acceso ilimitado 15 días','Ahorra vs diario','Evaluación física'],
     featured: false,
   },
   {
@@ -246,5 +246,7 @@ const App = () => (
     <Footer />
   </div>
 );
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
