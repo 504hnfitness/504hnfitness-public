@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>504HNfitness — Tegucigalpa</title>
+  <title>504HNfitness — Panel Admin</title>
 
   <!-- React -->
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Supabase (UMD vía unpkg) -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
+  <!-- jsPDF — generación de recibos en PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +23,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <div id="root"></div>
-
-  <!-- Lógica y componentes -->
-  <script type="text/babel" src="base.js"></script>
-
+  
+  <!-- Cambiamos type="text/babel" por type="module" para saltarnos el fallo de Babel -->
+  <script type="module" src="base.js"></script>
 </body>
 </html>
